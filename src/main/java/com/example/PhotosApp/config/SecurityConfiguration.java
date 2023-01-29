@@ -45,10 +45,6 @@ public class SecurityConfiguration {
         return authConfiguration.getAuthenticationManager();
     }
 
-    @Bean
-    public WebSecurityCustomizer webSecurityCustomizer() {
-        return (web) -> web.ignoring().antMatchers("/js/**", "/images/**");
-    }
 
     @Bean
     public DaoAuthenticationProvider authenticationProvider() {

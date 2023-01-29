@@ -15,12 +15,6 @@ create table if not exists users(
 select * from users;
 select * from USER_ROLES;
 
-delete from USERS;
-delete from ROLES;
-
-
-
-
 
 create table if not exists roles(
     id int auto_increment primary key,
@@ -36,5 +30,3 @@ select*from roles;
 INSERT INTO roles (name)
 VALUES ('ROLE_USER'),
        ('ROLE_ADMIN');
-
-
